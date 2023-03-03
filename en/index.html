@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gourmet tour of Mont-Laurier</title>
+	<link rel="stylesheet" href="../css/styles.css" media="screen" />
+	<link rel="stylesheet" href="../css/impression.css" media="print" />
+	<link rel="stylesheet" href="../node_modules/mediaelement/build/mediaelementplayer.min.css">
+	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="../node_modules/jquery-cycle2/build/jquery.cycle2.min.js"></script>
+	<script src="../node_modules/mediaelement/build/mediaelement-and-player.min.js"></script>
+</head>
+
+<body>
+	<header id="entete">
+		<nav>
+			<div> <a href="#" lang="fr" title="Version française" id="alt-linguistique"
+					data-location-id="page-principale">fr</a>
+			</div>
+		</nav>
+		
+        <h1>Gourmet tour of Mont-Laurier</h1>
+        <h2>It's local and it's good</h2>
+		<div id="logo">
+			<img src="../images/mont-laurier-gourmand.png" width="300"
+			height="300" alt="Mont-Laurier Gourmand" />
+		</div>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Home page</a></li>
+				<li><a href="../en/presentation.html">Presentation</a></li>
+				<li><a href="../en/suggest-location.html">Suggest a location</a></li>
+				<!-- <li><a href="#pied-page">Contact us</a></li> -->
+
+			</ul>
+			<p>You are here > Main page</p>
+		</nav>
+	</header>
+	<main>
+	
+		<div id="nav">
+			<button class="prev">Previous</button>
+			<button class="next">Next</button>
+		</div>
+		<div id="carrousel">
+			<div class="item">
+				<div class="inner">
+					<div class="container-image">
+						<h2>Laiterie des trois vallées</h2>
+						<img src="../images/laiterie.jpg" alt="Laiterie des trois vallées">
+						<figcaption>A picture of Laiterie des trois vallées taken by Priscille G.</figcaption>
+					</div>
+					<div class="container-contenu">
+						<p>Dairy products made with local milk!</p>
+						<audio controls preload="none" src="../audio/Laiterie.mp3">
+						</audio>
+						<p><a href="#description1" class="toggler">Show detail</a></p>
+
+						<p id="description1" class="description cache">This dairy processing plant, initially a family dairy founded by Émile Bélanger, became the “Laiterie des trois vallées” decades later.
+							Although visits to the factory are not authorized, you will find all their products in grocery stores and convenience stores in Mont-Laurier. From skimmed milk to coffee cream, including whipping and cooking cream, you will certainly find the product you need to create gourmet desserts and meals. Or you can simply enjoy the magnificent landscapes of Mont-Laurier while enjoying a delicious chocolate milk.</p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="inner">
+					<div class="container-image">
+						<h2>Les Jardins Bio du Solstice</h2>
+						<img src="../images/jardins.jpg" alt="Les Jardins Bio du Solstice">
+						<figcaption>A picture of the vegetable farm outlet Les Jardins Bio du Solstice taken by Priscille G.</figcaption>
+					</div>
+					<div class="container-contenu">
+						<p>Come and enjoy an organic and local basket!</p>
+						<audio controls preload="none" src="../audio/Jardin.mp3">
+						</audio>
+						<p><a href="#description2" class="toggler">Show detail</a></p>
+
+						<p id="description2" class="description cache">Closed during the winter, the seeds are prepared in the spring to obtain the plants. These will be transplanted when the temperatures warm. Starting in the summer, the vegetables will be ready to be harvested and eaten.
+							You will find fresh vegetables directly on the farm, from June to the end of October or in some corner grocery stores. Eggs are available year-round in several grocery stores and convenience stores in Mont-Laurier.
+							You can also stock up on plants to grow at home!</p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="inner">
+					<div class="container-image">
+						<h2>Ben Bagel</h2>
+						<img src="../images/ben.jpg" alt="Ben Bagel">
+						<figcaption>A picture of Ben Bagel bakery taken by Priscille G.</figcaption>
+					</div>
+					<div class="container-contenu">
+						<p>Tasty bagels and baked goods as you wish!</p>
+						<audio controls preload="none" src="../audio/Ben.mp3">
+						</audio>
+						<p><a href="#description3" class="toggler">Show detail</a></p>
+						<p id="description3" class="description cache">At Ben Bagel, you will find daily fresh products made and cooked on site. These are made, as far as possible, with local products. From the counter, you can observe the oven and see the baker at work, which is sure to make your mouth water.
+							Take a trip to Ben Bagel to discover delicious bagels, but also croissants and their tasty sandwiches, among others.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+<!-- 	<footer id="pied-page">
+
+        <h2>>Contact us</h2>
+      
+         <p><strong>Gourmet tour of Mont-Laurier</strong><br/>
+           413 2e AV Mont-Laurier (Québec), Canada J9L 3B7
+        </p>
+        <p>
+          Phone number&#160;: (438) 501-6447<br/>
+          E-mail&#160;: <a href="mailto:info@mont-laurier-gourmand.ca">info@mont-laurier-gourmand.ca</a>
+          </p>  
+        <p>&#169; All rights reserved 2022, Gourmet tour of Mont-Laurier.</p>
+        <a href="#entete">Back to top</a>
+        
+    </footer> -->
+	<script src="../js/scripts.js"></script>
+	<script>
+		window.onload = function () {
+			initEvents();
+			setAltLanguageLink();
+			putJCycleCarrousel();
+			$('audio').mediaelementplayer({stretching: "auto"});
+		}
+	</script>
+
+</body>
+
+</html>

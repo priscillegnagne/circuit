@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;600&family=Montserrat:wght@100;400;600;900&display=swap');
+
+html{font:600 100%/1.5 Cormorant,Helvetica,Arial,sans-serif;}
+*{
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+h1{
+    font-family: Montserrat;
+    font-weight: 600;
+    color: rgba(24, 69, 218, 0.664);
+}
+h2{
+    color: rgb(23, 83, 136);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+#logo img{
+    border-radius: 25%;
+    padding: 0.5rem;
+    border: 0.5rem solid rgba(49, 88, 218, 0.5);
+}

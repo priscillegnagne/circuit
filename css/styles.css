@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;600&family=Montserrat:wght@100;400;600;900&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+html{font:400 100%/1.5 Montserrat,Helvetica,Arial,sans-serif;}
+
+header {
+    padding: 0%;
+}
+main {
+    padding: 0 5% 5%;
+}
+h1{
+    font-family: Cormorant;
+    font-weight: 600;
+    color: rgba(24, 218, 218, 0.781);
+}
+h2{ font-family: Cormorant;
+    color: rgba(216, 24, 139);
+}
+a{
+  color: rgba(24, 218, 218, 0.781);
+}
+p{
+  font-size: 0.9rem;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+#logo img{
+    border-radius: 25%;
+    padding: 0.5rem;
+    border: 0.5rem solid rgba(49, 88, 218, 0.5);
+}
+
+.toggler,
+button {
+  border: 0.2rem solid #666;
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  text-decoration: none;
+  font-weight: bold;
+  background: #fff;
+  color: #666;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.toggler:hover,
+button:hover {
+  background: #666;
+  color: #fff;
+}
+
+/*navigation*/
+nav a:first-child{
+    color:rgb(245, 241, 241);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+nav ul li a{
+    color:rgb(245, 241, 241);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    background: rgba(43, 107, 190, 0.26);
+    display: flex;
+    padding: 1rem 2rem;
+    border-bottom: 0.063rem solid rgba(255,255,255,.1);
+    transition: all .3s ease;
+}
+nav p {
+    color: aliceblue;
+}
+
+#nav {
+    margin-bottom: 1rem;
+}
+
+.item {
+    margin: 0 0 0.5%;
+    
+}
+  
+.item.active {
+    display: block;
+}
+.item p,
+.item audio {
+  margin: 1rem 0;
+}
+.item img {
+  border-radius: 0.5rem;
+}
+.item .container-contenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5%;
+  align-items: center;
+}
+.container-image,
+.container-contenu {
+  flex: 0 0 50%;
+}
+.item div + div > p:first-of-type {
+  flex: 100%;
+  font-size: 1.5rem;
+}
+.mejs__container {
+  flex: 100%;
+}
+  
+@media screen and (min-width: 992px) {
+  .item .inner,
+  .item.active .inner {
+    display: flex;
+  }
+}
+
+/*fond ecran*/
+*#entete{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 100%),
+    url(../images/interface/parc.jpg) no-repeat;
+    background-size: cover;
+}
+/*#contenu{
+    background-color: rgba(39, 32, 32, 0.5);
+}*/
+
+/*page principale*/
+/*.lieu{
+    display: inline;
+}*/
+
+/*pied de page*/
+#pied-page{
+    background: rgba(162, 163, 177, 0.87);
+    padding: 0.1rem;
+    margin: 0.1rem;
+}
+
+/*formulaire*/
+label{
+    display: block;
+}
+label.required:after{
+    content: "*";
+    color: red;
+}
+.cache {
+    display: none;
+  }
+  

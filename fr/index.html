@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tour gourmand de Mont-Laurier</title>
+	<link rel="stylesheet" href="../css/styles.css" media="screen" />
+	<link rel="stylesheet" href="../css/impression.css" media="print" />
+	<link rel="stylesheet" href="../node_modules/mediaelement/build/mediaelementplayer.min.css">
+	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="../node_modules/jquery-cycle2/build/jquery.cycle2.min.js"></script>
+	<script src="../node_modules/mediaelement/build/mediaelement-and-player.min.js"></script>
+</head>
+
+<body>
+	<header id="entete">
+		<nav>
+			<div> <a href="#" lang="en" title="English version" id="alt-linguistique"
+					data-location-id="page-principale">en</a>
+			</div>
+		</nav>
+		
+		<h1>Tour gourmand de Mont-Laurier</h1>
+		<h2>C'est local et c'est bon</h2>
+		<div id="logo">
+			<img src="../images/mont-laurier-gourmand.png" width="300"
+			height="300" alt="Mont-Laurier Gourmand" />
+		</div>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Accueil</a></li>
+				<li><a href="../fr/presentation.html">Présentation</a></li>
+				<li><a href="../fr/suggerer-lieu.html">Suggérer un lieu</a></li>
+				<!-- <li><a href="#pied-page">Contactez-nous</a></li> -->
+
+			</ul>
+			<p>Vous êtes ici > Page principale</p>
+		</nav>
+	</header>
+	<main>
+	
+		<div id="nav">
+			<button class="prev">Précédent</button>
+			<button class="next">Suivant</button>
+		</div>
+		<div id="carrousel">
+			<div class="item">
+				<div class="inner">
+					<div class="container-image">
+						<h2>Laiterie des trois vallées</h2>
+						<img src="../images/laiterie.jpg" alt="Laiterie des trois vallées">
+						<figcaption>Une photo de la Laiterie des trois vallées prise par Priscille G.</figcaption>
+					</div>
+					<div class="container-contenu">
+						<p>Des produits laitiers faits avec du lait de la région!</p>
+						<audio controls preload="none" src="../audio/Laiterie.mp3">
+						</audio>
+						<p><a href="#description1" class="toggler">Montrer détail</a></p>
+
+						<p id="description1" class="description cache">Cette usine de transformation laitière, initialement laiterie familiale fondée par Émile Bélanger est devenue des décennies plus tard la Laiterie des trois vallées.
+                            Bien que les visites de l’usine ne soient pas autorisées, vous trouverez tous leurs produits dans les épiceries et dépanneurs de Mont-Laurier.
+                            Du lait écrémé à la crème à café, en passant par la crème à fouetter et à cuisson, vous trouverez certainement le produit qu’il vous faut pour créer des desserts et repas gourmands.
+                            Ou vous pourrez tout simplement profiter des magnifiques paysages de Mont-Laurier en dégustant un bon lait au chocolat.</p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="inner">
+					<div class="container-image">
+						<h2>Les Jardins Bio du Solstice</h2>
+						<img src="../images/jardins.jpg" alt="Les Jardins Bio du Solstice">
+						<figcaption>Une photo du point de vente de la ferme maraîchère Les Jardins Bio du Solstice prise par Priscille G.</figcaption>
+					</div>
+					<div class="container-contenu">
+						<p>Venez profiter d’un panier bio et local!</p>
+						<audio controls preload="none" src="../audio/Jardin.mp3">
+						</audio>
+						<p><a href="#description2" class="toggler">Montrer détail</a></p>
+
+						<p id="description2" class="description cache">Fermé durant l’hiver, les semences sont préparées au printemps pour obtenir les plants.
+                            Ceux-ci seront transplantés lorsque les températures s’adouciront. À partir de l’été, les légumes seront prêts à être récoltés et dégustés.
+                            Vous trouverez les légumes frais directement à la ferme, de juin à fin octobre ou dans quelques épiceries du coin.
+                            Les œufs sont disponibles à l’année dans plusieurs épiceries et dépanneurs de Mont-Laurier.
+                            Vous pourrez aussi vous approvisionner en plants à faire pousser chez vous!</p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="inner">
+					<div class="container-image">
+						<h2>Ben Bagel</h2>
+						<img src="../images/ben.jpg" alt="Ben Bagel">
+						<figcaption>Une photo de la boulangerie Ben Bagel prise par Priscille G.</figcaption>
+					</div>
+					<div class="container-contenu">
+						<p>Des bagels et produits de boulangerie savoureux à souhait!</p>
+						<audio controls preload="none" src="../audio/Ben.mp3">
+						</audio>
+						<p><a href="#description3" class="toggler">Montrer détail</a></p>
+						<p id="description3" class="description cache">Chez Ben Bagel, vous trouverez des produits frais du jour confectionnés et cuits sur place.
+                            Ceux-ci sont faits, dans la mesure du possible, avec des produits locaux.
+                            À partir du comptoir, vous pourrez observer le four et voir le boulanger à l’œuvre, ce qui ne manquera pas de vous mettre l’eau à la bouche.
+                            Faites un tour chez Ben Bagel pour découvrir de délicieux bagels, mais aussi les croissants et leur savoureux sandwichs, entre autres.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+<!-- 	<footer id="pied-page">
+
+        <h2>Nous joindre</h2>
+      
+        <p><strong>Tour gourmand de Mont-Laurier</strong><br/>
+           413 2e AV Mont-Laurier (Québec), Canada J9L 3B7
+        </p>
+        <p>
+          Téléphone&#160;: (438) 501-6447<br/>
+          Courriel&#160;: <a href="mailto:info@mont-laurier-gourmand.ca">info@mont-laurier-gourmand.ca</a>
+          </p>  
+        <p>&#169; Tous droits réservés 2022, Tour gourmand de Mont-Laurier.</p>
+        <a href="#entete">Retour en haut</a>
+        
+    </footer> -->
+	<script src="../js/scripts.js"></script>
+	<script>
+		window.onload = function () {
+			initEvents();
+			setAltLanguageLink();
+			putJCycleCarrousel();
+			$('audio').mediaelementplayer({stretching: "auto"});
+		}
+	</script>
+
+</body>
+
+</html>

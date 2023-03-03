@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggérer un lieu</title>
+    <link rel="stylesheet" href="../css/styles.css" media="screen" />
+    <link rel="stylesheet" href="../css/impression.css" media="print" />
+</head>
+<body>
+    <header id="entete">
+        <nav>
+            <div>
+                <a href="#" lang="en" title="English version" id="alt-linguistique"
+                    data-location-id="suggerer-lieu">en</a>
+            </div>
+        </nav>
+        
+        <h1>Tour gourmand de Mont-Laurier - Suggérer un lieu</h1>
+        <h2>C'est local et c'est bon</h2>
+                <div id="logo">
+                  <img src="../images/mont-laurier-gourmand.png" width="300"
+                    height="300" alt="Mont-Laurier Gourmand" />
+                </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Accueil</a>
+                    <a href="../fr/index.html">Page principale</a>
+                    <a href="../fr/presentation.html">Présentation</a>
+                    <a href="#pied-page">Contactez-nous</a>
+                </li>
+            </ul>
+            <p>Vous êtes ici > Suggérer un lieu </p>
+        </nav>
+            </header>
+
+    <form action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
+        <p>
+          <label for="titre" class="required">Titre</label>
+          <input type="text" name="titre" size="72" id="titre" required />
+        </p>
+        <p>
+            <label for="accroche" class="required">Accroche</label>
+            <textarea name="accroche" cols="72" rows="3" id="accroche" required>
+            </textarea>
+        </p>
+        <p>
+            <label for="description" class="required">Description</label>
+            <textarea name="description" cols="72" rows="10" id="description" required>
+            </textarea>
+        </p>
+        <p>
+            <label for="image">Image</label><br />
+            <input name="image" type="file" id="image" capture="environment" accept="image/*">
+        </p>
+        <p>
+            <label for="clip-sonore">Clip audio</label><br />
+            <input name="clip-sonore" type="file" id="clip-sonore" capture="user" accept="audio/*">
+        </p>
+        <p>
+            <label for="langue" class="required">Langue</label>
+            <select name="langue" id="langue" required>
+            <option value="">Choisir une option...</option>
+            <option value="choix1" selected="selected">Français</option>
+            <option value="choix2">English</option>
+            </select>
+        </p>
+        <p>
+            <label for="courriel" class="required">Courriel</label>
+            <input type="email" name="courriel" id="courriel" required>
+        </p>
+        <p>
+            <input type="submit" value="Envoyer" />
+            <input type="reset" value="Effacer" />
+        </p>
+    </form>
+
+    <footer id="pied-page">
+        <h2>Nous joindre</h2>
+      
+        <p><strong>Tour gourmand de Mont-Laurier</strong><br/>
+           413 2e AV Mont-Laurier (Québec), Canada J9L 3B7
+        </p>
+        <p>
+          Téléphone&#160;: (438) 501-6447<br/>
+          Courriel&#160;: <a href="mailto:info@mont-laurier-gourmand.ca">info@mont-laurier-gourmand.ca</a>
+          </p>  
+        <p>&#169; Tous droits réservés 2022, Tour gourmand de Mont-Laurier.</p>
+        <a href="#entete">Retour en haut</a>
+
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+    <script>
+        window.onload = function() {
+            setAltLanguageLink();
+            decorateLabels()
+        }
+    </script>
+</body>
+</html>
